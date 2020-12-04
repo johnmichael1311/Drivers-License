@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".page2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/txt1"
+        android:text="REPUBLIC OF THE PHILIPPINES "
+        android:textColor="@color/blk"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/txt2"
+        android:layout_below="@+id/txt1"
+        android:text="DEPARTMENT OF TRANSPORTATION AND COMMUNITAIONS"
+        android:textColor="@color/blk"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/txt3"
+        android:layout_below="@+id/txt2"
+        android:text="LAND TRANSPORTATION OFFICE"
+        android:textColor="@color/blk"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/txt4"
+        android:layout_below="@+id/txt3"
+        android:text="EAST AVE QUEZON CITY"
+        android:textColor="@color/blk"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/txt5"
+        android:layout_below="@+id/txt4"
+        android:text="NON-PROFESSIONAL"
+        android:textColor="@color/green"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt5"
+        android:id="@+id/txt6"
+        android:textColor="@color/blk"
+        android:text="LAST NAME, FIRST NAME, MIDDLE NAME"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dName"
+        android:gravity="center"
+        android:layout_below="@+id/txt6"
+        android:textSize="20sp"
+        android:textColor="@color/blk"
+        />
+
+    <ImageView
+        android:id="@+id/pict"
+        android:layout_width="120dp"
+        android:layout_height="128dp"
+        android:layout_below="@+id/dName"
+
+        android:src="@drawable/jm" />
+
+    <TextView
+        android:id="@+id/txtadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dName"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/pict"
+        android:text="ADDRESS (NO, STREET, CITY MUN., PROVINCE)"
+        android:textColor="@color/blk"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dAdd"
+        android:layout_below="@+id/txtadd"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/pict"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/blk"
+        />
+
+    <TextView
+        android:id="@+id/txtDoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dAdd"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/pict"
+        android:text="BIRTH DATE"
+        android:textColor="@color/blk"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dDoB"
+        android:gravity="center"
+        android:layout_below="@+id/txtDoB"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/pict"
+        android:textSize="10sp"
+        android:textColor="@color/blk"
+        />
+
+    <TextView
+        android:id="@+id/txtSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dAdd"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/txtDoB"
+        android:text="SEX"
+        android:textColor="@color/blk"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dSex"
+        android:gravity="center"
+        android:layout_below="@+id/txtSex"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/txtDoB"
+        android:textSize="10sp"
+        android:textColor="@color/blk"
+        />
+    <TextView
+        android:id="@+id/txtHT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dAdd"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/txtSex"
+        android:text="HT. (cm)"
+        android:textColor="@color/blk"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dHT"
+        android:gravity="center"
+        android:layout_below="@+id/txtHT"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/txtSex"
+        android:textSize="10sp"
+        android:textColor="@color/blk"
+        />
+
+    <TextView
+        android:id="@+id/txtWT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dAdd"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/txtHT"
+        android:text="WT. (kg)"
+        android:textColor="@color/blk"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dWT"
+        android:gravity="center"
+        android:layout_below="@+id/txtHT"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/txtHT"
+        android:textSize="10sp"
+        android:textColor="@color/blk"
+        />
+
+    <TextView
+        android:id="@+id/txtNationality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dAdd"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/txtWT"
+        android:text="NATIONALITY"
+        android:textColor="@color/blk"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/dNationality"
+        android:layout_below="@+id/txtHT"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/txtWT"
+        android:textSize="10sp"
+        android:textColor="@color/blk"
+        />
+
+    <TextView
+        android:id="@+id/txtRestrictions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dDoB"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/pict"
+        android:text="RESTRICTIONS"
+        android:textColor="@color/blk"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/dRestrictions"
+        android:layout_below="@+id/txtRestrictions"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/pict"
+        android:textSize="10sp"
+        android:textColor="@color/blk"
+        />
+
+    <TextView
+        android:id="@+id/txtConditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dDoB"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/txtRestrictions"
+        android:text="CONDITIONS"
+        android:textColor="@color/blk"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/dConditions"
+        android:layout_below="@+id/txtConditions"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/txtRestrictions"
+        android:textSize="10sp"
+        android:textColor="@color/blk"
+        />
+    <TextView
+        android:id="@+id/txtAGY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dDoB"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/txtConditions"
+        android:text="AGY"
+        android:textColor="@color/blk"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/dAGY"
+        android:layout_below="@+id/txtAGY"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/txtConditions"
+        android:textSize="10sp"
+        android:textColor="@color/blk"
+        />
+    <TextView
+    android:id="@+id/txtExpires"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/dDoB"
+    android:layout_marginLeft="37dp"
+    android:layout_marginTop="-2dp"
+    android:layout_toRightOf="@id/txtAGY"
+    android:text="EXPIRES"
+    android:textColor="@color/blk"
+    android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/dExpires"
+        android:layout_below="@+id/txtExpires"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/txtAGY"
+        android:textSize="10sp"
+        android:textColor="@color/blk"
+        />
+
+    <TextView
+        android:id="@+id/txtLicenseNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dRestrictions"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/pict"
+        android:text="License No"
+        android:textColor="@color/blk"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/dLicenseNumber"
+        android:layout_below="@+id/txtLicenseNumber"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/pict"
+        android:textSize="10sp"
+        android:textColor="@color/green"
+        />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/txtName"
+        android:hint="LN, FN, MN."
+        />
+    <EditText
+        android:id="@+id/txtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:hint="ADDRESS" />
+
+
+    <EditText
+        android:id="@+id/txtDnB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddress"
+        android:layout_alignParentStart="true"
+        android:hint="DATE OF BIRTH" />
+
+    <EditText
+        android:id="@+id/txtSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddress"
+        android:layout_toRightOf="@+id/txtDnB"
+        android:hint="SEX" />
+
+    <EditText
+        android:id="@+id/txtHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddress"
+        android:layout_toRightOf="@+id/txtSex"
+        android:hint="HT. (cm)" />
+
+    <EditText
+        android:id="@+id/txtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddress"
+        android:layout_toRightOf="@+id/txtHeight"
+        android:hint="WT. (kg)" />
+
+    <EditText
+        android:id="@+id/txtNationality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddress"
+        android:layout_toRightOf="@+id/txtWeight"
+        android:hint="NATIONALITY" />
+
+
+
+    <EditText
+        android:id="@+id/txtRestriction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNationality"
+        android:hint="RESTRICTIONS" />
+
+    <EditText
+        android:id="@+id/txtCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNationality"
+        android:layout_toRightOf="@+id/txtRestriction"
+        android:hint="CONDITIONS" />
+
+    <EditText
+        android:id="@+id/txtAGY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNationality"
+        android:layout_toRightOf="@+id/txtCondition"
+        android:hint="AGY" />
+
+    <EditText
+        android:id="@+id/txtExpiration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNationality"
+        android:layout_toRightOf="@+id/txtAGY"
+        android:hint="Expiration" />
+
+    <EditText
+        android:id="@+id/txtLicenseNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRestriction"
+        android:hint="LICENSE NO." />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGO"
+        android:layout_below="@+id/txtLicenseNo"
+        android:hint="GO TO NEXT PAGE"
+        />
+
+
+
+
+
+</RelativeLayout>
